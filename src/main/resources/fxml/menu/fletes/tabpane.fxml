@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="paneFletes" prefHeight="510.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="absortio.m00p4.negocio.ui.menu.fletes.TabPaneController">
+    <children>
+        <TabPane fx:id="tabPaneFletes" prefHeight="510.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab fx:id="tabfletes" onSelectionChanged="#clickTabFlete" text="Fletes">
+                    <content>
+                        <fx:include fx:id="fletes" source="fletes.fxml" />
+                    </content></Tab>
+                <Tab fx:id="tabcapacidades" text="Costos por Capacidad">
+                    <content>
+                        <fx:include fx:id="fletesCapacidades" source="fletescapacidades.fxml" />
+                    </content>
+                </Tab>
+                <Tab fx:id="tabdistritos" text="Costos por Distrito">
+                    <content>
+                        <fx:include fx:id="fletesDistritos" source="fletesdistritos.fxml" />
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+   <stylesheets>
+      <URL value="@../../css/myCss.css" />
+      <URL value="@../../css/vistas.css" />
+   </stylesheets>
+</Pane>

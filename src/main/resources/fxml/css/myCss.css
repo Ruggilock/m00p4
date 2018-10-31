@@ -1,0 +1,23 @@
+.button:hover{
+    -fx-background-color: #BAFDF1;
+    -fx-text-fill: #ffffff;
+    -fx-text-alignment: center;
+}
+.button{
+    /*-fx-background-color: #ffffff;*/
+    -fx-background-color: #59C7C6;
+    -fx-text-fill: white;
+}
+
+.TextField {
+    -fx-background-color: red;
+}
+
+.label{
+    -fx-text-fill: white;
+    -fx-font-family: "Century Gothic" !important;
+}
+
+.filtrolabel{
+    -fx-font-size: 100%;
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneAlmacenesProducto" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="absortio.m00p4.negocio.ui.menu.almacenes.ProductosAlmacenController">
+        <children>
+            <TextField fx:id="textFieldLote" layoutX="144.0" layoutY="58.0" prefHeight="25.0" prefWidth="146.0" />
+            <ComboBox fx:id="comboBoxMarca" layoutX="428.0" layoutY="107.0" prefHeight="25.0" prefWidth="145.0" />
+            <ComboBox fx:id="comboBoxSeccion" layoutX="171.0" layoutY="157.0" prefHeight="25.0" prefWidth="119.0" />
+            <TextField fx:id="textFieldCodBarras" layoutX="445.0" layoutY="58.0" prefHeight="25.0" prefWidth="146.0" />
+            <ComboBox fx:id="comboBoxCategoria" layoutX="144.0" layoutY="106.0" prefHeight="25.0" prefWidth="171.0" />
+            <ComboBox fx:id="comboBoxRack" layoutX="420.0" layoutY="157.0" prefHeight="25.0" prefWidth="171.0" />
+            <TextField fx:id="textFieldProducto" layoutX="719.0" layoutY="58.0" prefHeight="25.0" prefWidth="146.0" />
+            <ComboBox fx:id="comboBoxModelo" layoutX="720.0" layoutY="107.0" prefHeight="25.0" prefWidth="145.0" />
+            <Button fx:id="botonExportarExcel" layoutX="783.0" layoutY="197.0" mnemonicParsing="false" onMouseClicked="#clickExportarExcel" prefHeight="25.0" prefWidth="96.0" text="Exportar Excel" />
+            <Label fx:id="labelProdAlmacen" layoutX="275.0" layoutY="-11.0" text="Productos en Almacén">
+                <font>
+                    <Font size="49.0" />
+                </font>
+            </Label>
+            <Label layoutX="57.0" layoutY="62.0" text="Lote" />
+            <Button fx:id="botonBuscar" layoutX="767.0" layoutY="157.0" mnemonicParsing="false" onMouseClicked="#clickBuscar" text="Buscar" />
+            <Label layoutX="347.0" layoutY="62.0" text="Código de Barras" />
+            <Label layoutX="658.0" layoutY="62.0" text="Producto" />
+            <Label layoutX="347.0" layoutY="112.0" text="Marca" />
+            <Label layoutX="53.0" layoutY="112.0" text="Categoria" />
+            <Label layoutX="658.0" layoutY="111.0" text="Modelo" />
+            <Label layoutX="57.0" layoutY="161.0" text="Sección de Almacén" />
+            <Label layoutX="347.0" layoutY="161.0" text="Rack" />
+            <TableView fx:id="tablaProdAlmacen" layoutX="28.0" layoutY="238.0" prefHeight="195.0" prefWidth="945.0">
+                <columns>
+            <TableColumn fx:id="columnaN" prefWidth="32.0" text="N°" />
+                    <TableColumn fx:id="columnaLote" prefWidth="72.0" text="Lote" />
+                    <TableColumn fx:id="columnaBloque" minWidth="0.0" prefWidth="78.0" text="Bloque" />
+                    <TableColumn fx:id="columnaCodBarras" prefWidth="118.0" text="Codigo de Barras" />
+                    <TableColumn fx:id="columnaProducto" minWidth="0.0" prefWidth="110.0" text="Producto" />
+                    <TableColumn fx:id="columnaSeccionAlmacen" prefWidth="129.0" text="Seccion Almacén" />
+                    <TableColumn fx:id="columnaRack" minWidth="0.0" prefWidth="65.0" text="Rack" />
+                    <TableColumn fx:id="columnaCategoria" minWidth="0.0" prefWidth="76.0" text="Categoría" />
+                    <TableColumn fx:id="columnaMarca" prefWidth="60.0" text="Marca" />
+                    <TableColumn fx:id="columnaModelo" prefWidth="59.0" text="Modelo" />
+                    <TableColumn fx:id="columnaStockFisico" minWidth="0.0" prefWidth="79.0" text="Stock Físico" />
+                </columns>
+            </TableView>
+        </children>
+   <stylesheets>
+      <URL value="@../../css/myCss.css" />
+      <URL value="@../../css/vistas.css" />
+   </stylesheets>
+    </AnchorPane>

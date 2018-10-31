@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="paneEntrega" minHeight="0.0" minWidth="0.0" prefHeight="272.0" prefWidth="797.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="tablaProductos" layoutX="134.0" layoutY="65.0" prefHeight="182.0" prefWidth="553.0">
+         <columns>
+            <TableColumn fx:id="columnaN" prefWidth="61.0" text="N°" />
+            <TableColumn fx:id="columnaProducto" prefWidth="220.0" text="Producto" />
+            <TableColumn fx:id="columnaCantidad" prefWidth="110.0" text="Cantidad" />
+            <TableColumn fx:id="columnaCantidadEntrega" prefWidth="161.0" text=" Cantidad a Entregar" />
+         </columns>
+      </TableView>
+      <DatePicker fx:id="fechaEntrega" layoutX="400.0" layoutY="24.0" prefHeight="25.0" prefWidth="126.0" />
+      <Label layoutX="251.0" layoutY="29.0" text="Fecha de Entrega:" />
+   </children>
+   <stylesheets>
+      <URL value="@../../css/myCss.css" />
+      <URL value="@../../css/vistas.css" />
+   </stylesheets>
+</AnchorPane>

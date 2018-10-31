@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneCambioclave" maxHeight="280.0" maxWidth="380.0" minHeight="253.0" minWidth="300.0" prefHeight="268.0" prefWidth="384.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="absortio.m00p4.negocio.ui.menu.modal.cambioClaveController">
+   <children>
+      <Separator layoutX="22.0" layoutY="73.0" prefHeight="11.0" prefWidth="336.0" />
+      <Label layoutX="31.0" layoutY="178.0" text="Confirmacion Nueva" />
+      <Label layoutX="31.0" layoutY="131.0" text="Nueva Clave" />
+      <Button fx:id="botonAceptar" layoutX="147.0" layoutY="229.0" mnemonicParsing="false" onMouseClicked="#buttonAceptar" prefHeight="25.0" prefWidth="79.0" text="Aceptar" />
+      <Label layoutX="31.0" layoutY="89.0" text="Clave Anterior" />
+      <PasswordField fx:id="passwordFieldAnterior" layoutX="161.0" layoutY="86.0" prefHeight="25.0" prefWidth="195.0" />
+      <PasswordField fx:id="passwordFieldNueva" layoutX="161.0" layoutY="126.0" prefHeight="25.0" prefWidth="195.0" />
+      <PasswordField fx:id="passwordFieldConfirmar" layoutX="161.0" layoutY="175.0" prefHeight="25.0" prefWidth="195.0" />
+      <Label fx:id="labelMensaje" layoutX="31.0" layoutY="31.0" prefHeight="42.0" prefWidth="312.0" text="Bienvenido! Es su primer ingreso al sistema. Debe cambiar su contraseña por seguridad." wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+   <stylesheets>
+      <URL value="@../../css/myCss.css" />
+      <URL value="@../../css/vistas.css" />
+   </stylesheets>
+</AnchorPane>

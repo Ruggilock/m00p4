@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="absortio.m00p4.negocio.ui.menu.descuentos.DescuentosNuevoController">
+   <children>
+      <AnchorPane fx:id="paneNuevoDescuento" layoutY="-1.0" prefHeight="510.0" prefWidth="992.0">
+         <children>
+            <Label layoutX="43.0" layoutY="26.0" text="Nuevo">
+               <font>
+                  <Font size="49.0" />
+               </font>
+            </Label>
+            <Label layoutX="206.0" layoutY="55.0" text="Descuento">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+             <Separator layoutX="36.0" layoutY="86.0" prefHeight="11.0" prefWidth="947.0" />
+            <Label fx:id="labelPorcentaje" layoutX="180.0" layoutY="370.0" text="Porcentaje" />
+            <Label layoutX="180.0" layoutY="116.0" text="Tipo:" />
+            <Label fx:id="labelFechaIni" layoutX="180.0" layoutY="408.0" prefHeight="17.0" prefWidth="72.0" text="Fecha Inicio" />
+            <TextField fx:id="textFieldProducto1Nombre" layoutX="350.0" layoutY="233.0" prefHeight="26.0" prefWidth="129.0" />
+            <TextField fx:id="textFieldPorcentaje" layoutX="255.0" layoutY="364.0" prefHeight="26.0" prefWidth="567.0" />
+            <TextField fx:id="textFieldProducto2Nombre" layoutX="672.0" layoutY="231.0" prefHeight="26.0" prefWidth="150.0" />
+            <ComboBox fx:id="comboBoxTipo" layoutX="250.0" layoutY="111.0" onAction="#seleccionTipo" prefHeight="25.0" prefWidth="137.0" />
+            <DatePicker fx:id="dataPickerFechaIni" layoutX="255.0" layoutY="403.0" prefHeight="26.0" prefWidth="236.0" />
+            <Button fx:id="buttonAceptar" layoutX="386.0" layoutY="452.0" mnemonicParsing="false" onMouseClicked="#clickAceptar" text="Aceptar" />
+            <Button fx:id="buttonCancelar" layoutX="589.0" layoutY="452.0" mnemonicParsing="false" onMouseClicked="#clickCancelar" text="Cancelar" />
+            <TextField fx:id="textFieldCantidad1" layoutX="350.0" layoutY="268.0" prefHeight="25.0" prefWidth="129.0" />
+            <TextField fx:id="textFieldCantidad2" layoutX="672.0" layoutY="276.0" prefHeight="25.0" prefWidth="150.0" />
+            <Label fx:id="labelCantidad1" layoutX="277.0" layoutY="273.0" text="Cantidad" />
+            <Label fx:id="labelCantidad2" layoutX="608.0" layoutY="281.0" text="Cantidad" />
+            <Label fx:id="labelFechaFin" layoutX="509.0" layoutY="409.0" text="Fecha Fin" />
+            <DatePicker fx:id="dataPickerFechaFin" layoutX="586.0" layoutY="403.0" prefHeight="26.0" prefWidth="236.0" />
+            <Label fx:id="labelCategoria" layoutX="180.0" layoutY="324.0" text="Categoria" />
+            <Label fx:id="labelNombreProd1" layoutX="276.0" layoutY="238.0" text="Nombre" />
+            <Label fx:id="labelNombreProd2" layoutX="608.0" layoutY="238.0" text="Nombre" />
+            <Label layoutX="180.0" layoutY="196.0" text="Nombre:" />
+            <TextField fx:id="textFieldNombre" layoutX="250.0" layoutY="191.0" prefHeight="25.0" prefWidth="573.0"/>
+            <Button fx:id="buttonProducto1" layoutX="180.0" layoutY="233.0" mnemonicParsing="false" onMouseClicked="#clickProducto1" prefHeight="25.0" prefWidth="79.0" text="Producto 1" />
+            <Button fx:id="buttonProducto2" layoutX="511.0" layoutY="231.0" mnemonicParsing="false" onMouseClicked="#clickProducto2" prefHeight="25.0" prefWidth="79.0" text="Producto 2" />
+            <ComboBox fx:id="comboBoxCategoria" layoutX="255.0" layoutY="319.0" prefHeight="25.0" prefWidth="567.0" />
+            <TextArea fx:id="textAreaDesc" editable="false" layoutX="419.0" layoutY="105.0" prefHeight="65.0" prefWidth="402.0" text="Descripción del descuento" wrapText="true" />
+         </children>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@../../css/myCss.css" />
+      <URL value="@../../css/vistas.css" />
+   </stylesheets>
+</AnchorPane>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="paneSimulacion" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="absortio.m00p4.negocio.ui.menu.despacho.SimulacionController">
+   <children>
+      <Pane prefHeight="510.0" prefWidth="1000.0">
+         <children>
+            <Label layoutX="54.0" layoutY="12.0" text="Simulaciones">
+               <font>
+                  <Font size="49.0" />
+               </font>
+            </Label>
+             <Separator layoutX="29.0" layoutY="77.0" prefHeight="0.0" prefWidth="931.0" />
+            <Button layoutX="561.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#nuevaSimulacion" text="Nueva Simulación" />
+            <Separator layoutX="29.0" layoutY="200.0" prefHeight="0.0" prefWidth="931.0" />
+            <Label layoutX="65.0" layoutY="104.0" text="Sobrenombre" />
+            <Label layoutX="300.0" layoutY="104.0" text="Fecha" />
+            <Label layoutX="434.0" layoutY="104.0" text="Volumen" />
+            <Label layoutX="564.0" layoutY="104.0" text="Peso" />
+            <Label layoutX="717.0" layoutY="104.0" text="Transportista" />
+            <Label fx:id="labelSobrenombreDespacho" layoutX="65.0" layoutY="140.0" text="Sobrenombre" />
+            <Label fx:id="labelFechaDespacho" layoutX="300.0" layoutY="140.0" text="Fecha" />
+            <Label fx:id="labelVolumenDespacho" layoutX="434.0" layoutY="140.0" text="Volumen" />
+            <Label fx:id="labelPesoDespacho" layoutX="564.0" layoutY="140.0" text="Peso" />
+            <Label fx:id="labelTransportistaDespacho" layoutX="717.0" layoutY="140.0" text="Transportista" />
+            <TableView fx:id="tablaDetalleDespacho" layoutX="560.0" layoutY="278.0" prefHeight="169.0" prefWidth="308.0">
+               <columns>
+                  <TableColumn fx:id="t2columnaLote" prefWidth="75.0" text="Lote" />
+                  <TableColumn fx:id="t2columnaCantidad" prefWidth="75.0" text="Cantidad" />
+                  <TableColumn fx:id="t2columnaPeso" prefWidth="75.0" text="Peso" />
+                  <TableColumn fx:id="t2columnaVolumen" prefWidth="82.0" text="Volumen" />
+               </columns>
+            </TableView>
+            <TableView fx:id="tableSimulaciones" layoutX="54.0" layoutY="212.0" prefHeight="236.0" prefWidth="472.0">
+              <columns>
+                <TableColumn fx:id="t1columnaSimulacion" prefWidth="232.0" text="Simulación" />
+                <TableColumn fx:id="t1ColumnaPuntuacion" text="Puntuación" />
+                  <TableColumn fx:id="t1ColumnaDescargar" text="Descargar" />
+                  <TableColumn fx:id="t1ColumnaVisualizar" text="Visualizar" />
+              </columns>
+            </TableView>
+            <Button layoutX="469.0" layoutY="460.0" mnemonicParsing="false" onMouseClicked="#buttonCancelar" text="Regresar" />
+         </children>
+      </Pane>
+   </children>
+   <stylesheets>
+      <URL value="@../../css/myCss.css" />
+      <URL value="@../../css/vistas.css" />
+   </stylesheets>
+</Pane>

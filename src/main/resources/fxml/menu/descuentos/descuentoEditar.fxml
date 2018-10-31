@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="absortio.m00p4.negocio.ui.menu.descuentos.DescuentoEditarController">
+   <children>
+      <AnchorPane fx:id="paneEditarDescuento" layoutY="-1.0" prefHeight="495.0" prefWidth="992.0">
+         <children>
+            <Label layoutX="54.0" layoutY="26.0" text="Editar">
+               <font>
+                  <Font size="49.0" />
+               </font>
+            </Label>
+            <Label layoutX="218.0" layoutY="71.0" text="Descuento">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="225.0" text="Producto1" />
+            <Label layoutX="422.0" layoutY="260.0" text="Porcentaje" />
+            <Label layoutX="70.0" layoutY="135.0" text="Tipo" />
+            <Label layoutX="422.0" layoutY="226.0" text="Producto2" />
+            <Label layoutX="70.0" layoutY="310.0" prefHeight="17.0" prefWidth="72.0" text="Fecha Inicio" />
+            <TextField fx:id="textFieldProducto1Codigo" layoutX="154.0" layoutY="220.0" prefHeight="26.0" prefWidth="129.0" />
+            <TextField fx:id="textFieldPorcentaje" layoutX="505.0" layoutY="256.0" prefHeight="26.0" prefWidth="150.0" />
+            <TextField fx:id="textFieldProducto2Codigo" layoutX="505.0" layoutY="222.0" prefHeight="26.0" prefWidth="150.0" />
+            <ComboBox fx:id="comboBoxTipo" layoutX="165.0" layoutY="131.0" onAction="#seleccionTipo" prefHeight="25.0" prefWidth="191.0" />
+            <DatePicker fx:id="dataPickerFechaIni" layoutX="156.0" layoutY="305.0" prefHeight="26.0" prefWidth="150.0" />
+            <Button fx:id="buttonAceptar" layoutX="274.0" layoutY="391.0" mnemonicParsing="false" onMouseClicked="#clickAceptar" text="Aceptar" />
+            <Button fx:id="buttonCancelar" layoutX="493.0" layoutY="391.0" mnemonicParsing="false" onMouseClicked="#clickCancelar" text="Cancelar" />
+            <TextField fx:id="textFieldCantidad1" layoutX="305.0" layoutY="221.0" prefHeight="25.0" prefWidth="79.0" />
+            <TextField fx:id="textFieldCantidad2" layoutX="693.0" layoutY="221.0" prefHeight="25.0" prefWidth="57.0" />
+            <Label layoutX="321.0" layoutY="200.0" text="Cantidad" />
+            <Label layoutX="698.0" layoutY="200.0" text="Cantidad" />
+            <Label layoutX="422.0" layoutY="310.0" text="Fecha Fin" />
+            <DatePicker fx:id="dataPickerFechaFin" layoutX="505.0" layoutY="305.0" prefHeight="26.0" prefWidth="150.0" />
+            <TextField fx:id="textFieldCategoria" layoutX="154.0" layoutY="256.0" />
+            <Label layoutX="70.0" layoutY="260.0" text="Categoria" />
+            <Label layoutX="193.0" layoutY="200.0" text="Código" />
+            <Label layoutX="541.0" layoutY="200.0" text="Codigo" />
+            <Label fx:id="labelDescripcion" layoutX="491.0" layoutY="156.0" text="Descripción del descuento">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="173.0" text="Nombre" />
+            <TextField fx:id="textFieldNombre" layoutX="155.0" layoutY="169.0" />
+         </children>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@../../css/myCss.css" />
+      <URL value="@../../css/vistas.css" />
+   </stylesheets>
+</AnchorPane>

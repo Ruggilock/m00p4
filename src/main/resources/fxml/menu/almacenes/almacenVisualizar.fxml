@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="paneAlmacenVis" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="absortio.m00p4.negocio.ui.menu.almacenes.AlmacenVisualizarController">
+   <children>
+      <Pane prefHeight="510.0" prefWidth="1000.0">
+         <children>
+            <Label layoutX="54.0" layoutY="12.0" text="Distribución de Almacén">
+               <font>
+                  <Font size="49.0" />
+               </font>
+            </Label>
+             <Separator layoutX="29.0" layoutY="77.0" prefHeight="0.0" prefWidth="931.0" />
+            <GridPane fx:id="gridPaneGrilla" layoutX="54.0" layoutY="102.0" prefHeight="308.0" prefWidth="700.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="NEVER" minWidth="14.0" prefWidth="14.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="14.0" prefHeight="14.0" vgrow="NEVER" />
+              </rowConstraints>
+               <children>
+               </children>
+            </GridPane>
+             <Label layoutX="769.0" layoutY="88.0" text="Piso:" />
+             <ComboBox fx:id="comboBoxPiso" layoutX="790.0" layoutY="118.0" onAction="#seleccionarPiso" prefWidth="150.0" promptText="-Seleccione-" />
+            <Label layoutX="769.0" layoutY="183.0" text="Nombre de Producto:" />
+            <Label layoutX="769.0" layoutY="316.0" text="Código de Lote:" />
+            <Label fx:id="labelCodigoLote" layoutX="790.0" layoutY="348.0" text="-Seleccione-" />
+            <Label layoutX="769.0" layoutY="386.0" text="Cantidad:" />
+            <Label fx:id="labelCantidad" layoutX="790.0" layoutY="418.0" text="-Seleccione-" />
+            <TextArea fx:id="textAreaNombreProducto" editable="false" layoutX="784.0" layoutY="210.0" prefHeight="89.0" prefWidth="186.0" text="-Seleccione-" wrapText="true" />
+            <Button fx:id="botonBuscar" layoutX="566.0" layoutY="437.0" mnemonicParsing="false" onMouseClicked="#buscarBloquesProducto" prefHeight="25.0" prefWidth="141.0" text="Buscar por Producto" />
+            <TextField fx:id="textFieldNombreProducto" editable="false" layoutX="118.0" layoutY="437.0" prefHeight="25.0" prefWidth="382.0" />
+            <TextField fx:id="invisible" disable="true" editable="false" layoutX="789.0" layoutY="462.0" visible="false" />
+         </children>
+      </Pane>
+   </children>
+   <stylesheets>
+      <URL value="@../../css/myCss.css" />
+      <URL value="@../../css/vistas.css" />
+   </stylesheets>
+</Pane>

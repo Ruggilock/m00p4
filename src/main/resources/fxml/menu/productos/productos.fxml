@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="paneProductos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="832.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="absortio.m00p4.negocio.ui.menu.productos.ProductosController">
+    <children>
+        <Pane prefHeight="510.0" prefWidth="1000.0">
+            <children>
+                <Label layoutX="54.0" layoutY="12.0" text="Productos">
+                    <font>
+                        <Font size="49.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="29.0" layoutY="77.0" prefHeight="0.0" prefWidth="931.0" />
+                <Separator layoutX="29.0" layoutY="212.0" prefHeight="0.0" prefWidth="931.0" />
+                <Label layoutX="53.0" layoutY="100.0" text="Código de Barras:" />
+                <TextField fx:id="textFieldCodigoBarras" layoutX="198.0" layoutY="97.0" prefHeight="26.0" prefWidth="252.0" />
+                <Label layoutX="500.0" layoutY="100.0" text="Nombre:" />
+                <TextField fx:id="textFieldNombre" layoutX="610.0" layoutY="97.0" prefHeight="26.0" prefWidth="239.0" scaleShape="false" />
+                <Label layoutX="53.0" layoutY="137.0" prefHeight="26.0" prefWidth="56.0" text="Marca:" />
+                <ComboBox fx:id="comboBoxMarca" layoutX="198.0" layoutY="138.0" prefHeight="25.0" prefWidth="252.0" />
+            <Label layoutX="500.0" layoutY="137.0" prefHeight="26.0" prefWidth="74.0" text="Categoria:" />
+            <ComboBox fx:id="comboBoxCategoria" layoutX="610.0" layoutY="138.0" prefHeight="25.0" prefWidth="239.0" />
+            <Label layoutX="53.0" layoutY="177.0" prefHeight="26.0" prefWidth="56.0" text="Modelo:" />
+            <ComboBox fx:id="comboBoxModelo" layoutX="198.0" layoutY="178.0" prefHeight="25.0" prefWidth="252.0" />
+                <Button layoutX="883.0" layoutY="178.0" mnemonicParsing="false" onMouseClicked="#buscar" text="Buscar" />
+                <Button fx:id="buttonNuevo" layoutX="883.0" layoutY="229.0" mnemonicParsing="false" onMouseClicked="#clickNuevoProductos" text="Nuevo" />
+                <Button layoutX="759.0" layoutY="229.0" mnemonicParsing="false" onMouseClicked="#clickExportarProductos" text="Exportar Excel" />
+                <TableView fx:id="tablaProductos" layoutX="40.0" layoutY="266.0" prefHeight="211.0" prefWidth="920.0">
+                    <columns>
+                        <TableColumn fx:id="columnaN" prefWidth="38.99998474121094" text="Nº" />
+                        <TableColumn fx:id="columnaCodigo" prefWidth="78.00001525878906" text="Código" />
+                        <TableColumn fx:id="columnaNombre" prefWidth="177.0" text="Nombre" />
+                        <TableColumn fx:id="columnaMarca" minWidth="0.0" prefWidth="135.0" text="Marca" />
+                        <TableColumn fx:id="columnaCategoria" maxWidth="170.0" prefWidth="153.0" text="Categoria" />
+                        <TableColumn fx:id="columnaModelo" prefWidth="90.0" text="Modelo" />
+                  <TableColumn fx:id="columnaStockLogico" prefWidth="102.0" text="Stock Logico" />
+                        <TableColumn fx:id="columnaAcciones" prefWidth="144.0" text="Acciones" />
+                    </columns>
+                </TableView>
+            <ImageView fitHeight="45.0" fitWidth="39.0" layoutX="910.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../imagenes/settings-black.png" />
+               </image>
+            </ImageView>
+            </children>
+        </Pane>
+    </children>
+   <stylesheets>
+      <URL value="@../../css/myCss.css" />
+      <URL value="@../../css/vistas.css" />
+   </stylesheets>
+</Pane>

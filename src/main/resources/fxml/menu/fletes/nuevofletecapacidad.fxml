@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneNuevoFleteCapacidad" prefHeight="495.0" prefWidth="992.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="absortio.m00p4.negocio.ui.menu.fletes.FletesCapacidadesNuevoController">
+    <children>
+        <Label fx:id="labelTitulo" layoutX="54.0" layoutY="26.0" text="Nuevo">
+            <font>
+                <Font size="49.0" />
+            </font>
+        </Label>
+        <Label fx:id="labelFiltro" layoutX="218.0" layoutY="71.0" text="Flete Capacidad">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="276.0" layoutY="143.0" prefHeight="17.0" prefWidth="200.0" text="Unidad de Medida Peso" />
+        <Button layoutX="329.0" layoutY="391.0" mnemonicParsing="false" onMouseClicked="#buttonAceptar" text="Aceptar" />
+        <Button layoutX="493.0" layoutY="391.0" mnemonicParsing="false" onMouseClicked="#buttonCancelar" text="Cancelar" />
+        <Label layoutX="330.0" layoutY="178.0" text="Rango Pesos" />
+        <Separator layoutX="54.0" layoutY="113.0" prefHeight="4.0" prefWidth="200.0" />
+        <Label layoutX="280.0" layoutY="216.0" prefHeight="17.0" prefWidth="221.0" text="Unidad de Medida Vol." />
+        <Label layoutX="337.0" layoutY="294.0" text="Costo" />
+        <ComboBox fx:id="comboUnipeso" layoutX="439.0" layoutY="138.0" prefWidth="150.0" />
+        <ComboBox fx:id="comboUnidvol" layoutX="440.0" layoutY="210.0" prefWidth="150.0" />
+        <Spinner fx:id="spinnerCosto" editable="true" layoutX="443.0" layoutY="289.0" prefHeight="27.0" prefWidth="67.0" />
+      <Spinner fx:id="spinnerPesomin" editable="true" layoutX="439.0" layoutY="173.0" prefHeight="27.0" prefWidth="67.0" />
+      <Spinner fx:id="spinnerPesomax" editable="true" layoutX="519.0" layoutY="173.0" prefHeight="27.0" prefWidth="67.0" />
+      <Label layoutX="319.0" layoutY="253.0" text="Rango Volumen" />
+      <Spinner fx:id="spinnerVolmin" editable="true" layoutX="439.0" layoutY="248.0" prefHeight="27.0" prefWidth="67.0" />
+      <Spinner fx:id="spinnerVolmax" editable="true" layoutX="519.0" layoutY="248.0" prefHeight="27.0" prefWidth="67.0" />
+    </children>
+   <stylesheets>
+      <URL value="@../../css/myCss.css" />
+      <URL value="@../../css/vistas.css" />
+   </stylesheets>
+</AnchorPane>

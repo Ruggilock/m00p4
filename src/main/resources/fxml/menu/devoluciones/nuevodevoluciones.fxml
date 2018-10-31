@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="510.0" prefWidth="1000.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="absortio.m00p4.negocio.ui.menu.devoluciones.DevolucionesNuevoController">
+    <children>
+        <Pane fx:id="paneNuevoVenta" prefHeight="510.0" prefWidth="1055.0">
+            <children>
+                <Label layoutX="43.0" layoutY="26.0" text="Nuevo">
+                    <font>
+                        <Font size="49.0" />
+                    </font>
+                </Label>
+                <Label layoutX="206.0" layoutY="55.0" text="Devolucion">
+                    <font>
+                        <Font size="25.0" />
+                    </font>
+                </Label>
+                <Separator layoutX="36.0" layoutY="86.0" prefHeight="11.0" prefWidth="947.0" />
+                <Label layoutX="812.0" layoutY="48.0" text="Moneda:" />
+                <ComboBox fx:id="comboBoxMoneda" layoutX="878.0" layoutY="43.0" prefHeight="25.0" prefWidth="94.0" />
+                <Label layoutX="815.0" layoutY="246.0" text="Subtotal: " />
+                <Label layoutX="807.0" layoutY="277.0" text="Impuestos: " />
+                <Label layoutX="836.0" layoutY="341.0" text="Total: " />
+                <Button layoutX="403.0" layoutY="463.0" mnemonicParsing="false" onMouseClicked="#buttonAceptar" prefHeight="25.0" prefWidth="71.0" text="Aceptar" />
+                <Button layoutX="566.0" layoutY="463.0" mnemonicParsing="false" onMouseClicked="#buttonCancelar" prefHeight="25.0" prefWidth="71.0" text="Cancelar" />
+                <SplitPane layoutX="54.0" layoutY="150.0" prefHeight="256.0" prefWidth="684.0">
+                    <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="216.0" prefWidth="682.0">
+                            <children>
+                                <Label layoutX="14.0" layoutY="14.0" text="Detalle de Devolucion:" />
+                                <TableView fx:id="tablaProductos" layoutX="20.0" layoutY="70.0" prefHeight="160.0" prefWidth="637.0">
+                                    <columns>
+                                        <TableColumn fx:id="columnaCodigo" prefWidth="117.00001525878906" text="Código de Barras" />
+                                        <TableColumn fx:id="columnaNombre" prefWidth="88.0" text="Producto" />
+                                        <TableColumn fx:id="columnaCantidad" prefWidth="68.0" text="Cantidad" />
+                                        <TableColumn fx:id="columnaPrecioUnit" prefWidth="88.0" text="Precio Unitario" />
+                                        <TableColumn fx:id="columnaLote" prefWidth="63.0" text="Lote" />
+                                        <TableColumn fx:id="columnaDescuentoUnit" prefWidth="76.0" text="Descuento" />
+                                        <TableColumn fx:id="columnaImporte" prefWidth="65.0" text="Importe" />
+                                        <TableColumn fx:id="columnaAcciones" prefWidth="72.0" text="Acciones" />
+                                    </columns>
+                                </TableView>
+                                <Button layoutX="539.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#clickNuevoProducto" text="Nuevo Producto" />
+                            </children></AnchorPane>
+                    </items>
+                </SplitPane>
+                <Label fx:id="labelSubtotal" layoutX="907.0" layoutY="246.0" text="0" />
+                <Label fx:id="labelImpuestos" layoutX="907.0" layoutY="277.0" text="0" />
+                <Label fx:id="labelTotal" layoutX="908.0" layoutY="341.0" text="0" />
+            <Label layoutX="67.0" layoutY="116.0" text="No. Documento Venta" />
+            <TextField fx:id="textFieldNoDocumento" layoutX="220.0" layoutY="111.0" />
+            <Label layoutX="800.0" layoutY="308.0" text="Descuentos:" />
+            <Label fx:id="labelDescuentos" layoutX="908.0" layoutY="308.0" text="0" />
+            </children>
+        </Pane>
+    </children>
+    <stylesheets>
+        <URL value="@../../css/myCss.css" />
+        <URL value="@../../css/vistas.css" />
+    </stylesheets>
+</AnchorPane>

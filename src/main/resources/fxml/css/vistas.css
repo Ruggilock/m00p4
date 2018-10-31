@@ -1,0 +1,17 @@
+.label{
+    -fx-text-fill: black;
+}
+
+.background{
+    -fx-background-color: white;
+    -fx-pref-height: 510px;
+    -fx-pref-width: 1000px;
+}
+
+.textField{
+    -fx-padding: 20px;
+}
+.pane{
+    -fx-pref-height: 510px;
+    -fx-pref-width: 1000px;
+}

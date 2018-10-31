@@ -1,0 +1,9 @@
+.headerPane{
+    -fx-background-color: #242E44;
+}
+
+.backgroundForm{
+    -fx-background-color: gray;
+}
+
+.jfx-hamburger StackPane { -fx-background-color: white; }

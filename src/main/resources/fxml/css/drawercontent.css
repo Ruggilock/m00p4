@@ -1,0 +1,109 @@
+.button{
+    -fx-background-color: #0072C6;
+    -fx-font-weight: bold;
+}
+
+.button:hover{
+    -fx-background-color: #005696;
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+}
+
+#inicio{
+    -fx-background-image: url("../imagenes/home-button.png");
+    -fx-background-size: 25px;
+    -fx-background-position: 10px;
+    -fx-background-repeat: no-repeat;
+}
+
+#clientes{
+    -fx-background-image: url("../imagenes/clerk-with-tie.png");
+    -fx-background-size: 25px;
+    -fx-background-position: 10px;
+    -fx-background-repeat: no-repeat;
+}
+
+#empleados{
+    -fx-background-image: url("../imagenes/employee.png");
+    -fx-background-size: 25px;
+    -fx-background-position: 10px;
+    -fx-background-repeat: no-repeat;
+}
+
+#roles{
+    -fx-background-image: url("../imagenes/wrench.png");
+    -fx-background-size: 25px;
+    -fx-background-position: 10px;
+    -fx-background-repeat: no-repeat;
+}
+
+#ventas{
+    -fx-background-image: url("../imagenes/bar-chart.png");
+    -fx-background-size: 25px;
+    -fx-background-position: 10px;
+    -fx-background-repeat: no-repeat;
+}
+
+#productos{
+    -fx-background-image: url("../imagenes/settings.png");
+    -fx-background-size: 25px;
+    -fx-background-position: 10px;
+    -fx-background-repeat: no-repeat;
+}
+
+#almacen{
+    -fx-background-image: url("../imagenes/warehouse4.png");
+    -fx-background-size: 25px;
+    -fx-background-position: 10px;
+    -fx-background-repeat: no-repeat;
+}
+
+#descuentos{
+    -fx-background-image: url("../imagenes/percentage.png");
+    -fx-background-size: 25px;
+    -fx-background-position: 10px;
+    -fx-background-repeat: no-repeat;
+}
+
+#transportistas{
+    -fx-background-image: url("../imagenes/delivery-truck-silhouette.png");
+    -fx-background-size: 25px;
+    -fx-background-position: 10px;
+    -fx-background-repeat: no-repeat;
+}
+
+#flete{
+    -fx-background-image: url("../imagenes/forklift-with-boxes.png");
+    -fx-background-size: 25px;
+    -fx-background-position: 10px;
+    -fx-background-repeat: no-repeat;
+}
+
+#solMovimiento{
+    -fx-background-image: url("../imagenes/email.png");
+    -fx-background-size: 25px;
+    -fx-background-position: 10px;
+    -fx-background-repeat: no-repeat;
+}
+
+#despacho{
+    -fx-background-image: url("../imagenes/all-terrain-vehicle-with-cargo.png");
+    -fx-background-size: 25px;
+    -fx-background-position: 10px;
+    -fx-background-repeat: no-repeat;
+}
+
+#ingreso{
+    -fx-background-image: url("../imagenes/enter-left.png");
+    -fx-background-size: 25px;
+    -fx-background-position: 10px;
+    -fx-background-repeat: no-repeat;
+}
+
+#kardex{
+    -fx-background-image: url("../imagenes/signing-the-contract.png");
+    -fx-background-size: 25px;
+    -fx-background-position: 10px;
+    -fx-background-repeat: no-repeat;
+}

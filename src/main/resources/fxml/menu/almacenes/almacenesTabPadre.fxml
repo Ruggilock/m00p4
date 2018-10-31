@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="paneAlmacenesTabPadre" prefHeight="400.0" prefWidth="600.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="496.0" prefWidth="949.0">
+         <children>
+            <TabPane layoutX="8.0" layoutY="10.0" prefHeight="476.0" prefWidth="927.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Distribución">
+                  <content>
+                      <fx:include fx:id="paneAlmacenesDistribucion" source="almacenesDistribucion.fxml" />
+                  </content>
+                </Tab>
+                <Tab text="Productos">
+                  <content>
+                      <fx:include fx:id="paneAlmacenesProducto" source="almacenesProducto.fxml" />
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children></Pane>
+   </children>
+   <stylesheets>
+      <URL value="@../../css/myCss.css" />
+      <URL value="@../../css/vistas.css" />
+   </stylesheets>
+</AnchorPane>

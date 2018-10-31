@@ -1,0 +1,12 @@
+.paneLogin{
+    -fx-background-color: #242E44;
+}
+
+.loginBackground{
+    -fx-background-color: #59C7C6;
+}
+
+.loginInput{
+    -fx-background-color: #242E44;
+    -fx-text-fill: white;
+}

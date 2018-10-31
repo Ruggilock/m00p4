@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="absortio.m00p4.negocio.ui.menu.solMovimientos.AnadirLoteSolMovimiento">
+    <children>
+        <Label layoutX="54.0" layoutY="26.0" text="Añadir">
+            <font>
+                <Font size="49.0" />
+            </font>
+        </Label>
+        <Label layoutX="218.0" layoutY="71.0" text="Lotes por Mover">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+      <Separator layoutX="54.0" layoutY="111.0" prefWidth="200.0" />
+        <TextField layoutX="288.0" layoutY="140.0" prefHeight="26.0" prefWidth="150.0" />
+      <Label layoutX="172.0" layoutY="145.0" text="Codigo de Lote" />
+      <TextField layoutX="289.0" layoutY="176.0" prefHeight="26.0" prefWidth="150.0" />
+      <Label layoutX="173.0" layoutY="181.0" text="Codigo de Barras" />
+      <TextField layoutX="288.0" layoutY="213.0" prefHeight="26.0" prefWidth="150.0" />
+      <Label layoutX="172.0" layoutY="218.0" text="Producto" />
+      <TextField layoutX="289.0" layoutY="252.0" prefHeight="26.0" prefWidth="150.0" />
+      <Label layoutX="173.0" layoutY="257.0" text="Cantidad" />
+        <Button layoutX="353.0" layoutY="322.0" mnemonicParsing="false" onMouseClicked="#buttonCancelar" text="Cancelar" />
+        <Button layoutX="185.0" layoutY="322.0" mnemonicParsing="false" onMouseClicked="#buttonAnadir" prefHeight="27.0" prefWidth="65.0" text="Añadir" />
+      <Button layoutX="450.0" layoutY="140.0" mnemonicParsing="false" onMouseClicked="#buttonBuscar" prefHeight="27.0" prefWidth="65.0" text="Buscar" />
+    </children>
+   <stylesheets>
+      <URL value="@../../css/myCss.css" />
+      <URL value="@../../css/vistas.css" />
+   </stylesheets>
+</AnchorPane>

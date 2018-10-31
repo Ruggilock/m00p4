@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="paneNuevoTransportista" prefHeight="495.0" prefWidth="992.0" styleClass="background" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="absortio.m00p4.negocio.ui.menu.transportistas.TransportistasNuevoController">
+   <children>
+      <Label fx:id="labelTitulo" layoutX="54.0" layoutY="26.0" prefHeight="71.0" prefWidth="206.0" text="Nuevo">
+         <font>
+            <Font size="49.0" />
+         </font>
+      </Label>
+      <Label layoutX="218.0" layoutY="71.0" text="Transportista">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="219.0" text="Documento: " />
+      <Label layoutX="76.0" layoutY="159.0" text="Tipo Documento: " />
+      <Label layoutX="497.0" layoutY="220.0" text="Apellido Mat: " />
+      <Label layoutX="500.0" layoutY="285.0" text="Telefono:" />
+      <Label layoutX="501.0" layoutY="160.0" text="Apellido Pat:" />
+      <ComboBox fx:id="comboBoxTipoDocumento" layoutX="230.0" layoutY="155.0" onAction="#comboBoxSeleccionTipoDoc" prefWidth="150.0" />
+      <TextField fx:id="textFieldDocumento" layoutX="230.0" layoutY="213.0" prefHeight="26.0" prefWidth="150.0" />
+      <TextField fx:id="textFieldNombres" layoutX="230.0" layoutY="281.0" prefHeight="26.0" prefWidth="150.0" />
+      <TextField fx:id="textFieldApellidoPat" layoutX="605.0" layoutY="155.0" prefHeight="26.0" prefWidth="150.0" />
+      <TextField fx:id="textFieldApellidoMat" layoutX="605.0" layoutY="215.0" prefHeight="26.0" prefWidth="150.0" />
+      <TextField fx:id="textFieldTelefono" layoutX="605.0" layoutY="281.0" prefHeight="26.0" prefWidth="150.0" />
+      <Button fx:id="aceptar" layoutX="329.0" layoutY="391.0" mnemonicParsing="false" onMouseClicked="#buttonAceptar" text="Aceptar" />
+      <Button fx:id="cancelar" layoutX="493.0" layoutY="391.0" mnemonicParsing="false" onMouseClicked="#buttonCancelar" text="Cancelar" />
+      <Label fx:id="labelNombre" layoutX="76.0" layoutY="285.0" prefHeight="17.0" prefWidth="143.0" text="Nombres:" />
+       </children>
+   <stylesheets>
+      <URL value="@../../css/myCss.css" />
+      <URL value="@../../css/vistas.css" />
+   </stylesheets>
+</AnchorPane>

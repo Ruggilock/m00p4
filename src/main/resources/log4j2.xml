@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+    <Properties>
+        <Property name="LOG_PATTERN">
+            %d{yyyy-MM-dd HH:mm:ss.SSS} %5p ${hostName} --- [%15.15t] %-40.40c{1.} : %m%n%ex
+        </Property>
+        <Property name="FILENAME">moppa.log</Property>
+        <Property name="FILEAUDITNAME">moppa_audit.log</Property>
+        <Property name="FILEERRORNAME">moppa_error.log</Property>
+        <Property name="FILENAMEPATTERN">moppa-%d{yyyy-MM-dd}-%i.log</Property>
+        <Property name="FILENAMEPATTERNAUDIT">moppa_audit-%d{yyyy-MM-dd}-%i.log</Property>
+        <Property name="LOG_PATTERN_AUDIT">
+            %d{yyyy-MM-dd HH:mm:ss} ${hostName} : %m%n
+        </Property>
+        <Property name="LOG_PATTERN_ERROR">
+            %d{yyyy-MM-dd HH:mm:ss.SSS} %5p ${hostName} %-40.40c{1.} : %m%n%ex
+        </Property>
+
+    </Properties>
+
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${LOG_PATTERN}"/>
+        </Console>
+
+        <!-- Rolling File Appender -->
+        <RollingFile name="FileAppender"  fileName="${FILENAME}"
+                     filePattern="${FILENAMEPATTERN}">
+            <PatternLayout>
+                <Pattern>${LOG_PATTERN}</Pattern>
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="10MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+        <RollingFile name="FileErrorAppender" fileName="${FILEERRORNAME}"
+                     filePattern="${FILENAMEPATTERN}">
+            <PatternLayout>
+                <Pattern>${LOG_PATTERN}</Pattern>
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="500MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+        <RollingFile name="FileAuditAppender" fileName="${FILEAUDITNAME}"
+                     filePattern="${FILENAMEPATTERNAUDIT}">
+            <PatternLayout>
+                <Pattern>${LOG_PATTERN_AUDIT}</Pattern>
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="500MB" />
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+    </Appenders>
+    <Loggers>
+        <Logger name="org.springframework" level="error"/>
+        <Logger name="org.hibernate" level="error"/>
+        <Logger name="javafx" level="error"/>
+
+        <Root level="info">
+            <AppenderRef ref="ConsoleAppender" />
+            <!--<AppenderRef ref="FileAppender" />-->
+            <AppenderRef ref="FileAuditAppender"/>
+        </Root>
+        <Logger name="absortio.m00p4" level="error">
+        <AppenderRef ref="FileErrorAppender"/>
+
+    </Logger>
+<!--
+        <Logger name="absortio.m00p4" level="info">
+            <AppenderRef ref="FileAuditAppender"/>
+
+        </Logger>
+-->
+
+
+    </Loggers>
+</Configuration>

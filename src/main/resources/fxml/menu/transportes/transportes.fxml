@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="paneTransporte" prefHeight="466.0" prefWidth="950.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane prefHeight="466.0" prefWidth="950.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Transportista">
+               <content>
+                  <fx:include fx:id="transportistas" source="transportistas.fxml" />
+               </content>
+            </Tab>
+            <Tab text="Unidad de Transporte">
+                <content>
+                    <fx:include fx:id="unidadestransporte" source="unidadestransporte.fxml" />
+                </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+   <stylesheets>
+      <URL value="@../../css/myCss.css" />
+      <URL value="@../../css/vistas.css" />
+   </stylesheets>
+</Pane>
